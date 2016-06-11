@@ -1,10 +1,10 @@
 package de.alpharogroup.order.management.entities;
+
+import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-import org.junit.experimental.categories.Categories;
 
 import de.alpharogroup.db.entity.VersionableBaseEntity;
 import lombok.Getter;
@@ -36,7 +36,7 @@ implements Cloneable {
 	private String name;
 
 	/** The net amount. */
-	private java.math.BigDecimal netAmount;
+	private BigDecimal netAmount;
 
 	/** The active state of the item, if true the user item is active and can be used in invoices. */
 	private Boolean active;
