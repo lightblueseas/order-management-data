@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * The Entity class {@link Categories} is keeping the information for
- * the categories from the items.
+ * The Entity class {@link Categories} is keeping the information for the
+ * categories from the items.
  */
 @Entity
 @Table(name = "categories")

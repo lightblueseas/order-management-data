@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import de.alpharogroup.db.entity.VersionableBaseEntity;
+import de.alpharogroup.db.entity.version.VersionableBaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,15 +14,13 @@ import lombok.Setter;
  * The class {@link Invoices} holds data from invoices.
  */
 @Entity
-@Table(name="invoices")
+@Table(name = "invoices")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Invoices
-extends VersionableBaseEntity<Integer>
-implements Cloneable {
+public class Invoices extends VersionableBaseEntity<Integer> implements Cloneable {
 
-	/**  Serial Version UID. */
+	/** Serial Version UID. */
 	private static final long serialVersionUID = 1L;
 
 	/** The creation date. */
@@ -31,7 +29,10 @@ implements Cloneable {
 	/** The payed. */
 	private Boolean payed;
 
-	/** The target payment date is the final date that this invoice shell be paid. */
+	/**
+	 * The target payment date is the final date that this invoice shell be
+	 * paid.
+	 */
 	private Date targetPaymentDate;
 
 	/** The table of this invoice. */

@@ -6,24 +6,23 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import de.alpharogroup.db.entity.VersionableBaseEntity;
+import de.alpharogroup.db.entity.version.VersionableBaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * The class {@link Items} represents an item or a product that can be used in an invoice.
+ * The class {@link Items} represents an item or a product that can be used in
+ * an invoice.
  */
 @Entity
-@Table(name="items")
+@Table(name = "items")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Items
-extends VersionableBaseEntity<Integer>
-implements Cloneable {
+public class Items extends VersionableBaseEntity<Integer> implements Cloneable {
 
-	/**  Serial Version UID. */
+	/** Serial Version UID. */
 	private static final long serialVersionUID = 1L;
 
 	/** The category. */
@@ -38,7 +37,10 @@ implements Cloneable {
 	/** The net amount. */
 	private BigDecimal netAmount;
 
-	/** The active state of the item, if true the user item is active and can be used in invoices. */
+	/**
+	 * The active state of the item, if true the user item is active and can be
+	 * used in invoices.
+	 */
 	private Boolean active;
 
 	/** The tax. */
