@@ -36,15 +36,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * The class {@link Items} represents an item or a product that can be used in
- * an invoice.
+ * The class {@link Items} represents an item or a product that can be used in an invoice.
  */
 @Entity
 @Table(name = "items")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Items extends VersionableBaseEntity<Integer> implements Cloneable {
+public class Items extends VersionableBaseEntity<Integer> implements Cloneable
+{
 
 	/** Serial Version UID. */
 	private static final long serialVersionUID = 1L;
@@ -62,8 +62,7 @@ public class Items extends VersionableBaseEntity<Integer> implements Cloneable {
 	private BigDecimal netAmount;
 
 	/**
-	 * The active state of the item, if true the user item is active and can be
-	 * used in invoices.
+	 * The active state of the item, if true the user item is active and can be used in invoices.
 	 */
 	private Boolean active;
 

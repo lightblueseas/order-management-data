@@ -42,7 +42,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Invoices extends VersionableBaseEntity<Integer> implements Cloneable {
+public class Invoices extends VersionableBaseEntity<Integer> implements Cloneable
+{
 
 	/** Serial Version UID. */
 	private static final long serialVersionUID = 1L;
@@ -54,8 +55,7 @@ public class Invoices extends VersionableBaseEntity<Integer> implements Cloneabl
 	private Boolean payed;
 
 	/**
-	 * The target payment date is the final date that this invoice shell be
-	 * paid.
+	 * The target payment date is the final date that this invoice shell be paid.
 	 */
 	private Date targetPaymentDate;
 
