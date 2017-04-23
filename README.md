@@ -1,4 +1,4 @@
-# order-management-data
+# Overview
 
 Parent project that holds module projects for the persistence of order management data.
 
@@ -43,6 +43,9 @@ Add the following maven dependency to your project `pom.xml` if you want to impo
 			</dependency>
 			...
 		</dependencies>
+		 
+## Open Issues
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/order-management-data.svg?style=flat)](https://github.com/astrapi69/order-management-data/issues) 
 
 ## Want to Help and improve it? ###
 
